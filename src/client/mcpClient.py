@@ -22,3 +22,24 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+
+# from fastmcp import Client
+
+# config = {
+#     "mcpServers": {
+#         "remote-service": {
+#             "url": "https://api.example.com/mcp",
+#             "headers": {
+#                 "Authorization": "Bearer YOUR_TOKEN"
+#             }
+#         }
+#     }
+# }
+
+# async def run_complex_client():
+#     client = Client(config)
+#     async with client:
+#         # Note: In multi-server mode, tool names are prefixed: 'servername_toolname'
+#         result = await client.call_tool("remote-service_get_data", {"query": "test"})
+#         print(result)
